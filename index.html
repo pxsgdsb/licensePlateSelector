@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>licensePlateSelector</title>
+    <link rel="stylesheet" href="./licensePlateSelector.css">
+    <style>
+        .box{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #demo,#demo2 {
+            padding: 15px;
+        }
+        button {
+            outline:none;
+            margin: 15px;
+            padding: 3px 10px;
+            border-radius: 5px;
+            background-color: #269CE9;
+            border-color: #269CE9;
+            color: #fff;
+            text-shadow: 0 1px 0 rgba(0,0,0,.2);
+            background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <label>车牌:</label>
+        <div id="demo"></div>
+    </div>
+    <div class="box">
+        <label>车牌:</label>
+        <div id="demo2"></div>
+    </div>
+    <button>清空车牌</button>
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./licensePlateSelector.js"></script>
+    <script>
+        /**
+         * 实例化
+        */
+        let licensePlateSelector = new LicensePlateSelector();
+        let licensePlateSelector_two = new LicensePlateSelector();
+
+        // 初始化
+        licensePlateSelector.init({
+            elem: "#demo",  // 根元素id
+            value: "湘A",   // 默认填充车牌
+            activeIndex: 2,    // 默认选中下标 (从0开始，不传时，默认不选中)
+            inputCallBack:function(val){ // 输入事件回调
+                console.log(val);
+                let plate_number = licensePlateSelector.getValue(); // 获取当前车牌
+                console.log(plate_number);
+            },
+            deleteCallBack:function(){ // 键盘删除事件回调
+                let plate_number = licensePlateSelector.getValue(); // 获取当前车牌
+                console.log(plate_number);
+            },
+            closeKeyCallBack:function(){ // 关闭键盘事件回调
+                console.log("键盘关闭");
+            },
+        })
+
+        // 初始化
+        licensePlateSelector_two.init({
+            elem: "#demo2",  // 根元素id
+            value: "湘B",   // 默认填充车牌
+        })
+        // 设置车牌
+        licensePlateSelector_two.setValue("粤A1E9Q3")
+        $("button").click(function(){
+            licensePlateSelector_two.clearValue();
+        })
+    </script>
+</body>
+
+</html>
