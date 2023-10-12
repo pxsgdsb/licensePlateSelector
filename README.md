@@ -88,10 +88,10 @@ licensePlateSelector.setValue("粤A1E9Q3");
 licensePlateSelector.clearValue();
 ```
 
-### 截图
+### 演示
 
-![image](1.jpg)
-![image](2.jpg)
+![image](demo.gif)
+
 
 ### END
 
