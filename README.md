@@ -2,6 +2,8 @@
  
 基于jquery的移动端H5车牌输入选择器
 
+> 预览: https://pxsgdsb.github.io/licensePlateSelector 
+> 请使用移动端打开
 
 
 ### 依赖 
