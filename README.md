@@ -101,5 +101,5 @@ github地址：https://github.com/pxsgdsb/licensePlateSelector
 
 gitee地址：https://gitee.com/PxStrong/licensePlateSelector
 
-如果觉得对你还有些用，顺手点一下star吧。
+如果觉得对你有用，顺手点一下star吧。
 

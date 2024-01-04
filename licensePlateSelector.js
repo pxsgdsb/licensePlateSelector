@@ -60,6 +60,7 @@
                 <li>贵</li>
                 <li>云</li>
                 <li>川</li>
+                <li>使</li>
             </ul>
         </div>
         <!--字母键盘 -->
@@ -106,6 +107,8 @@
                 <li>港</li>
                 <li>澳</li>
                 <li>学</li>
+                <li>使</li>
+                <li>挂</li>
                 <li class="del">删除</li>
             </ul>
         </div>`
