@@ -15,7 +15,8 @@
 
 * 引入文件
 
-> 引入 ```jqyery.js```、```licensePlateSelector.css```、```licensePlateSelector.js``` 文件，```jqyery.js``` 需要放置在 ```licensePlateSelector.js``` 之前。
+> 引入 ```jquery.js```、```licensePlateSelector.css```、```licensePlateSelector.js``` 文件，
+> ```jquery.js``` 需要放置在 ```licensePlateSelector.js``` 之前。
 
 ``` html
 <link rel="stylesheet" href="./licensePlateSelector.css">
